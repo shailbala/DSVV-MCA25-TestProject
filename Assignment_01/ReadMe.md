@@ -1,4 +1,11 @@
 ## Assignment 1
+
+**Topics Covered**: Templates, Forms, Redirection
+
+**Extra**: Functional Programming, Git
+
+### Problem Statement
+
 Create two pages: Home ("`\`") and UserNameGenerator("`\newUser`").
 In Home, add a form to take 2 inputs: Name and Email. And a "`Sign Up`" button.
 On clicking "`Sign Up`", it should *redirect* to the UserNameGenerator page and show the following details:
@@ -6,9 +13,9 @@ On clicking "`Sign Up`", it should *redirect* to the UserNameGenerator page and 
 - **Email**
 - **Username** (generate a random 6-letter word + 2 digits / Be creative)
 
-Important: Both pages should use *Templates*.
+Important: Both pages should use *Templates* with appropriate variables.
 
-Possible flow:
+#### Possible flow:
 1. Explore Templates. Create the two pages with templates.
 2. Add form in Home page to take user inputs.
 3. Add a new function to generate username.
