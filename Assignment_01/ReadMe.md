@@ -23,6 +23,7 @@ Important: Both pages should use *Templates* with appropriate variables.
 5. Redirect to the new page with all the data.
 
 **Last Date to Submit**: 17/03/2024
+
 **How to submit**: Create new folder under Assignment_01 with your name and add your assignment inside. Raise a PR by last date. Describe your changes in detail in the PR description.
 
 Only acceptable if the previous assignment is completed.
