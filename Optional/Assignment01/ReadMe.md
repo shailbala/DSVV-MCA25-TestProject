@@ -7,7 +7,7 @@
 
 #### All these to be done in a Jupyter Notebook.
 
-#### Parse the un-processed csv file using pandas and do the following:
+#### Parse the scraped_data.csv file using pandas and do the following:
 * Read the csv into a pandas dataframe setting the first column as Index column.
 * Show the first five and last ten rows in the dataframe.
 * What are the columns present?
