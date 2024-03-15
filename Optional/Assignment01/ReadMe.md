@@ -24,6 +24,7 @@
 * Split the dataframe based on the languages. For each language, save a different file with the format AwgpBooks[Lang].csv. Example: AwgpBooksEn.csv, AwgpBooksHi.csv
 
 #### Submission Instructions:
+Create a new folder with your name and add all the relevant files. Raise a new PR with proepr description.
 To upload the optional assignment, upload a Jupyter Notebook with both code and output. Add all the 8 csvs saved after processing the data.
 
 #### Last Date: 17/03/2024
