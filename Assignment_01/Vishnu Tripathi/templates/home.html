@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #83c0c1;
+    }
+
+    #form {
+      margin: 1rem;
+      padding: 0.5rem;
+      box-shadow: 0 0 0.75rem #0b60b0;
+    }
+
+    #form>div {
+      /* width: clamp(45vw, 1vw, 50vw); */
+      margin: 1rem;
+      display: flex;
+      flex-flow: column wrap;
+      gap: 10px;
+    }
+
+    #form>div>* {
+      flex: 1 1 50%;
+      border-radius: 4px;
+      border: none;
+      padding: 0.5rem;
+    }
+
+    #form>div>*:hover {
+      font-weight: bolder;
+    }
+
+    input:focus {
+      outline: none;
+      color: grey;
+      font-weight: bolder;
+    }
+
+    #submit {
+      /* flex-basis: 150px !important; */
+      color: white;
+      background-color: #6c22a6;
+    }
+
+    @media (min-width: 400px) {
+      #form {
+        width: 60vw;
+      }
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    .error {
+      /* display: none; */
+      margin: -15px -5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Sign-up / Log-in</h1>
+    <form action="/data" method="POST" id="form">
+
+      <div class="input-control">
+        <input type="email" id="email" name="email" placeholder="E-mail" required/>
+      </div>
+      <div class="input-control">
+        <input type="password" id="pass" name="password" placeholder="Password" required/>
+        <p class="error"></p>
+      </div>
+
+      <div>
+        <input type="submit" id="submit" value="submit" />
+      </div>
+
+      <!-- <div><input type="text"></div> -->
+
+    </form>
+  </div>
+  <!-- <script>
+      const username = document.getElementById("username");
+      const email = document.getElementById("email");
+      var password1 = document.getElementById("pass");
+      var password2 = document.getElementById("re-pass");
+
+      document.getElementById("submit").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        validateInputs();
+      });
+
+      const setError = (element, message) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector(".error");
+
+        inputControl.querySelector("input").style.border = "2px solid red";
+
+        errorDisplay.style.display = "block";
+
+        if (element.focus() === true) {
+          errorDisplay.style.display = "none";
+        }
+        errorDisplay.innerText = message;
+        inputControl.classList.add("error");
+        inputControl.classList.remove("success");
+      };
+
+      const setSuccess = (element) => {
+        const inputControl = element.parentElement;
+        const errorDisplay = inputControl.querySelector(".error");
+
+        inputControl.querySelector("input").style.border = "2px solid green";
+
+        errorDisplay.innerText = "";
+        inputControl.classList.add("success");
+        inputControl.classList.remove("error");
+      };
+      const isValidEmail = async (email) => {
+        // const re = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        return await re.test(String(email).toLowerCase());
+      };
+      const validateInputs = () => {
+        const usernameValue = username.value.trim();
+        const emailValue = email.value.trim();
+        const password1Value = password1.value.trim();
+        const password2Value = password2.value.trim();
+        if (usernameValue === "") {
+          setError(username, "Username is required.");
+        } else {
+          setSuccess(username);
+        }
+
+        if (emailValue === "") {
+          setError(email, "Email is required.");
+        } else if (!isValidEmail(emailValue)) {
+          setError(email, "Provide a Valid Email address.");
+        } else {
+          setSuccess(email);
+        }
+
+        if (password1Value === "") {
+          setError(password1, "Password is required.");
+        } else if (password1Value.length < 8) {
+          setError(password1, "Password must be at least 8 Characters.");
+        } else {
+          setSuccess(password1Value);
+        }
+
+        if (password2Value === "") {
+          setError(password2, "Please Confirm your Password.");
+        } else if (password1Value != password2Value) {
+          setError(password2, "Passwords doesn't match");
+        } else {
+          setSuccess(password2);
+        }
+      };
+    </script> -->
+</body>
+
+</html>
