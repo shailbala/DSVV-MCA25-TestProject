@@ -7,7 +7,7 @@
 
 #### All these to be done in a Jupyter Notebook.
 
-#### Parse the scraped_data.csv file using pandas and do the following:
+#### Parse the un-processed csv file using pandas and do the following:
 * Read the csv into a pandas dataframe setting the first column as Index column.
 * Show the first five and last ten rows in the dataframe.
 * What are the columns present?
@@ -18,7 +18,7 @@
 * Are there any rows which have no author? Did you remove all the non-book products?
 * What is the total count of books in the AWGP Store?
 * Get all the unique author names. There are names for the same author. Can you update it to have a single format for each author?
-* Some author names contain extra symbols which is not desirable. Can you update that?
+* Look at ImgSource, some of them are invalid and contain '---' as the image name. Can you update these to have empty or null value?
 * **Optional**: Explore the column named 'Extra'. Are any of these values useful? Can we extract some information from these values?
 * Save the dataframe to file named "allAwgpBooks.csv".
 * Split the dataframe based on the languages. For each language, save a different file with the format AwgpBooks[Lang].csv. Example: AwgpBooksEn.csv, AwgpBooksHi.csv
