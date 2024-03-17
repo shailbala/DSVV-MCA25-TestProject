@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    height: 100vh;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed rgb(0, 255, 55);
+    height: 150px; 
+    width: 300px; 
+    justify-content: center;
+    display: flexbox;
+    background-color: blue;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+    
+}
+.label-group{
+    padding: 10px;
+    margin-top: 15px;
+    color: rgb(235, 227, 230);
+    font-size: 12px;
+}
+#name, #email {
+    margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+
+}
+
+.input{
+color: white;
+size: 24px;
+border: none;
+background-color: #04AA6D;
+padding: 6px 16px;
+border: none;
+border-radius: 50px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+.label-group{
+    font-size: 20px;
+    font-weight: 300;
+    font-style: bold;
+}
+
+/* Username */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.gen {
+    margin: 20px;
+}
+
+.userdetail {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    /* border-radius: 8px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+caption {
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 120px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font: 12px;
+}
+
+  
