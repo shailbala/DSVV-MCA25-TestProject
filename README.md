@@ -5,18 +5,12 @@ Test Project for MCA-2025 students
 2.Alok Deep
 3.
 4.
-5.
+5.Gaurav Kumar
 6.
-7.
+7.Khushi Kumari
 8.
-9.Khushi Kumari
+9.Poonam Chaurasia
 10.
 11.
 12.
 13.
-
-
-2.Alok Deep
-
-
-5. Gaurav Kuma
