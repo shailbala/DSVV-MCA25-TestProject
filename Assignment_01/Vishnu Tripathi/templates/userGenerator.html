@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Username Generator</title>
+    <title>Username-Generator</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -72,12 +71,19 @@
         h1 {
             font-size: clamp(2rem, 5vw, 5rem);
         }
+
+        .input-control{
+            display: flex;
+            flex-direction: row !important;
+            
+        }
+
     </style>
 </head>
 
 <body>
     <div class="main">
-        <h2>Username Generator</h2>
+        <h1>Username Generator</h1>
         <form id="form">
             <div class="input-control">
                 <label for="name">Name:</label>
@@ -88,36 +94,27 @@
                 <input type="text" id="email" name="email" required  />
             </div>
             <div class="input-control">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" readonly>
+                <button type="button" id="submit" >Generate Username</button>
             </div>
-            <div>
-                <button type="button" id="sumbit" onclick="generateUsername()">Generate Username</button>
+            <div class="input-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" readonly/>
             </div>
     </div>
     </div>
 
     <script>
-        function generateUsername() {
-
-            const characters = 'abcdefghijklmnopqrstuvwxyz';
-            const numbers = '0123456789'
-            let word = ""
-            for (let i = 0;i < 6;i++) {
-                word += characters.charAt(Math.floor(Math.random() * characters.length));
-                console.log("Character", word)
-            }
-
-            for (let i = 0;i < 2;i++) {
-                word += numbers.charAt(Math.floor(Math.random() * numbers.length));
-                console.log("number", word)
-            }
-            console.log(word)
-            document.getElementById('username').value = word;
-
-        }
+        document.getElementById('submit').addEventListener('click', function(){
+            fetch('/generate_username')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('username').value = data.username
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        })
 
     </script>
 </body>
-
 </html>
