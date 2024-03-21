@@ -9,17 +9,17 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 client = MongoClient('localhost', 27017)
 db = client.student_details
 
-@app.route("/")
+@app.route("/", methods=['GET','POST'])
 def form():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        return redirect(url_for('data'))
     return render_template('home.html')
 
 
-@app.route('/data', methods=['GET', 'POST'])
+@app.route('/data', methods=['GET'])
 def data():
-    data = {}
-    if request.method == 'POST':
-        data['Email'] = request.form['email']
-        db.studentDetails.insert_one(data)
+    email = request.args.get('email')
 
     return render_template('userGenerator.html')
 
