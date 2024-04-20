@@ -1,0 +1,295 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(249, 221, 168);
+    padding: 10px;
+    border-radius: 10px;
+    border: dashed orange;
+    color: rgb(53, 50, 50);
+}
+
+h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th,td {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: left;
+    color: #fcf8f8;
+}
+
+th {
+    background-color: #300aa0;
+    
+}
+
+tr:nth-child(even) {
+    background-color: #6570ea; 
+}
+
+tr:nth-child(odd) {
+    background-color: #9fa5e9; 
+}
+
+.example {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+/* Apply :active pseudo-class */
+.example1:active {
+    color: white;
+    border: #f9f9f9;
+}
+
+/* Apply :any-link pseudo-class */
+.example2:any-link {
+    text-decoration: wavy underline;
+}
+
+/* Apply :autofill pseudo-class */
+.example3:-webkit-autofill {
+    background-color: lightyellow;
+}
+
+/* Apply :checked pseudo-class */
+.example4:checked {
+    border: 2px solid green;
+}
+
+/* Apply :default pseudo-class */
+.example5:default {
+    font-weight: bold;
+}
+
+/* Apply :defined pseudo-class */
+.example6:defined {
+    background-color: lightgrey;
+}
+
+/* Apply :disabled pseudo-class */
+.example7:disabled {
+    opacity: 0.5;
+}
+
+/* Apply :empty pseudo-class */
+.example8:empty {
+    border: 1px dashed black;
+}
+
+/* Apply :enabled pseudo-class */
+.example9:enabled {
+    background-color: lightgreen;
+}
+
+/* Apply :first pseudo-class */
+.example10:first {
+    font-style: italic;
+}
+
+/* Apply :first-child pseudo-class */
+.example10:first-child {
+    font-weight: bold;
+}
+
+/* Apply :first-of-type pseudo-class */
+.example12:first-of-type {
+    color: blue;
+}
+
+/* Apply :focus pseudo-class */
+.example:focus {
+    outline: 2px solid blue;
+}
+
+/* Apply :focus-visible pseudo-class */
+.example:focus-visible {
+    outline: 2px solid green;
+}
+
+/* Apply :focus-within pseudo-class */
+.example:focus-within {
+    border: 2px solid purple;
+}
+
+/* Apply :fullscreen pseudo-class */
+.example:fullscreen {
+    background-color: lightgrey;
+}
+
+/* Apply :hover pseudo-class */
+.example13:hover {
+    background-color: red;
+}
+
+/* Apply :indeterminate pseudo-class */
+.example:indeterminate {
+    background-color: yellow;
+}
+
+/* Apply :in-range pseudo-class */
+.example:in-range {
+    background-color: lightgreen;
+}
+
+/* Apply :invalid pseudo-class */
+.example:invalid {
+    border: 2px solid red;
+}
+
+/* Apply :lang pseudo-class */
+.example:lang(en) {
+    font-style: italic;
+}
+
+/* Apply :last-child pseudo-class */
+.example:last-child {
+    font-weight: bold;
+}
+
+/* Apply :last-of-type pseudo-class */
+.example:last-of-type {
+    color: red;
+}
+
+/* Apply :left pseudo-class */
+.example:left {
+    text-align: left;
+}
+
+/* Apply :link pseudo-class */
+.example:link {
+    color: blue;
+}
+
+/* Apply :modal pseudo-class */
+.example:modal {
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/* Apply :not pseudo-class */
+.example:not(.example) {
+    color: grey;
+}
+
+/* Apply :nth-child pseudo-class */
+.example:nth-child(even) {
+    background-color: lightgrey;
+}
+
+/* Apply :nth-last-child pseudo-class */
+.example:nth-last-child(2) {
+    background-color: lightgrey;
+}
+
+/* Apply :nth-last-of-type pseudo-class */
+.example:nth-last-of-type(2) {
+    background-color: lightgrey;
+}
+
+/* Apply :nth-of-type pseudo-class */
+.example:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+/* Apply :only-child pseudo-class */
+.example:only-child {
+    border: 2px solid green;
+}
+
+/* Apply :only-of-type pseudo-class */
+.example:only-of-type {
+    border: 2px solid red;
+}
+
+/* Apply :optional pseudo-class */
+.example:optional {
+    border: 1px dashed grey;
+}
+
+/* Apply :out-of-range pseudo-class */
+.example:out-of-range {
+    background-color: salmon;
+}
+
+/* Apply :paused pseudo-class */
+.example:paused {
+    border: 2px solid blue;
+}
+
+/* Apply :picture-in-picture pseudo-class */
+.example:picture-in-picture {
+    border: 2px solid orange;
+}
+
+/* Apply :placeholder-shown pseudo-class */
+.example:placeholder-shown {
+    color: grey;
+}
+
+/* Apply :playing pseudo-class */
+.example:playing {
+    border: 2px solid green;
+}
+
+/* Apply :read-only pseudo-class */
+.example:read-only {
+    background-color: lightgrey;
+}
+
+/* Apply :read-write pseudo-class */
+.example:read-write {
+    background-color: lightgreen;
+}
+
+/* Apply :required pseudo-class */
+.example:required {
+    border: 2px solid red;
+}
+
+/* Apply :right pseudo-class */
+.example:right {
+    text-align: right;
+}
+
+/* Apply :target pseudo-class */
+.example:target {
+    background-color: yellow;
+}
+
+/* Apply :user-invalid pseudo-class */
+.example:user-invalid {
+    border: 2px solid red;
+}
+
+/* Apply :valid pseudo-class */
+.examplel1:valid {
+    border: 2px solid green;
+}
+
+/* Apply :visited pseudo-class */
+.examplel:visited {
+    color: purple;
+}

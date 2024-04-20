@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pseudo Classes</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>:active</td>
+                <td>Selects the active link</td>
+                <td><a href="#" class="example1">Active Link</a></td>
+            </tr>
+            <tr>
+                <td>:any-link</td>
+                <td>Selects any hyperlink</td>
+                <td><a href="#" class="example2">Any Link</a></td>
+            </tr>
+            <tr>
+                <td>:autofill</td>
+                <td>Selects input elements that are auto-filled by the browser</td>
+                <td><input type="text" class="example3" placeholder="Autofill Example"></td>
+            </tr>
+            <tr>
+                <td>:checked</td>
+                <td>Selects input elements that are checked (e.g., checkboxes or radio buttons)</td>
+                <td><input type="checkbox" class="example4" checked> Checked</td>
+            </tr>
+            <tr>
+                <td>:default</td>
+                <td>Selects input elements that are the default option (for form elements)</td>
+                <td><input type="submit" class="example5" value="Submit"></td>
+            </tr>
+            <tr>
+                <td>:defined</td>
+                <td>Selects input elements that have a defined value</td>
+                <td><input type="text" class="example6" value="Defined Value"></td>
+            </tr>
+            <!-- Add more rows for other pseudo-classes -->
+            <tr>
+                <td>:disabled</td>
+                <td>Selects input elements that are disabled</td>
+                <td><input type="text" class="example7" disabled></td>
+            </tr>
+            <tr>
+                <td>:enabled</td>
+                <td>Selects input elements that are enabled</td>
+                <td><input type="text" class="example9" value="Enabled" readonly></td>
+            </tr>
+            <tr>
+                <td>:first</td>
+                <td>Selects the first element of its parent</td>
+                <td>
+                    <div class="example10">First Element</div>
+                    <div class="example10">Second Element</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:first-child</td>
+                <td>Selects the first child element of its parent</td>
+                <td>
+                    <div class="example11">First Child</div>
+                    <div class="example11">Second Child</div>
+                </td>
+            </tr>
+            <tr> 
+                <td>:first-of-type</td>
+                <td>Selects the first element of its type within its parent</td>
+                <td>
+                    <div class="example12">First of Type</div>
+                    <p class="example12">Paragraph</p>
+                    <div class="example12">Second of Type</div>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>:hover</td>
+                <td>Selects the element when you mouse over it</td>
+                <td>
+                    <div class="example13" style="background-color: lightblue;">Hover Over Me</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:indeterminate</td>
+                <td>Selects input elements that are in an indeterminate state (e.g., checkboxes)</td>
+                <td><input type="checkbox" class="example14" indeterminate> Indeterminate</td>
+            </tr>
+            <tr>
+                <td>:in-range</td>
+                <td>Selects input elements that are within a specified range</td>
+                <td><input type="number" class="example15" min="0" max="10" value="5"></td>
+            </tr>
+            <tr>
+                <td>:invalid</td>
+                <td>Selects input elements that are invalid according to their validation constraints</td>
+                <td><input type="text" class="example16" required></td>
+            </tr>
+          
+            <tr>
+                <td>:lang()</td>
+                <td>Selects elements based on the language attribute</td>
+                <td>
+                    <p lang="en" class="example17">English Text</p>
+                </td>
+            </tr>
+            <tr>
+                <td>:last-child</td>
+                <td>Selects the last child element of its parent</td>
+                <td>
+                    <div class="example18">First Child</div>
+                    <div class="example18">Last Child</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:last-of-type</td>
+                <td>Selects the last element of its type within its parent</td>
+                <td>
+                    <div class="example">First of Type</div>
+                    <p class="example">Paragraph</p>
+                    <div class="example">Last of Type</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:left</td>
+                <td>Selects elements that are aligned to the left within their container</td>
+                <td>
+                    <div class="example" style="text-align: left;">Left Aligned</div>
+                    <div class="example" style="text-align: right;">Right Aligned</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:link</td>
+                <td>Selects unvisited links</td>
+                <td><a href="#" class="example">Unvisited Link</a></td>
+            </tr>
+            <tr>
+                <td>:modal</td>
+                <td>Selects the element that is displayed as a modal dialog box</td>
+                <td>
+                    <div class="example" onclick="openModal()">Open Modal</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:not()</td>
+                <td>Selects elements that do not match a given selector(s)</td>
+                <td>
+                    <div class="example">Matched Element</div>
+                    <div class="example">Not Matched Element</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-child()</td>
+                <td>Selects elements based on their position within a parent</td>
+                <td>
+                    <div class="example">First Child</div>
+                    <div class="example">Second Child</div>
+                    <div class="example">Third Child</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-last-child()</td>
+                <td>Selects elements based on their position within a parent, counting from the last child</td>
+                <td>
+                    <div class="example">First Child</div>
+                    <div class="example">Second Child</div>
+                    <div class="example">Third Child</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-last-of-type()</td>
+                <td>Selects elements based on their position within a parent of a specified type, counting from the last
+                    element</td>
+                <td>
+                    <div class="example">First of Type</div>
+                    <p class="example">Paragraph</p>
+                    <div class="example">Second of Type</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-of-type()</td>
+                <td>Selects elements based on their position within a parent of a specified type</td>
+                <td>
+                    <div class="example">First of Type</div>
+                    <p class="example">Paragraph</p>
+                    <div class="example">Second of Type</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:only-child</td>
+                <td>Selects elements that are the only child of their parent</td>
+                <td>
+                    <div class="example">Only Child</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:only-of-type</td>
+                <td>Selects elements that are the only element of their type within their parent</td>
+                <td>
+                    <p class="example">Paragraph</p>
+                    <div class="example">Div</div>
+                </td>
+            </tr>
+            <tr>
+                <td>:optional</td>
+                <td>Selects input elements that are not required</td>
+                <td><input type="text" class="example"></td>
+            </tr>
+            <tr>
+                <td>:out-of-range</td>
+                <td>Selects input elements that are out of a specified range</td>
+                <td><input type="number" class="example" min="0" max="10" value="15"></td>
+            </tr>
+  
+          
+            <tr>
+                <td>:placeholder-shown</td>
+                <td>Selects input elements whose placeholder text is currently being shown</td>
+                <td><input type="text" class="example" placeholder="Placeholder Text"></td>
+            </tr>
+            <tr>
+                <td>:read-only</td>
+                <td>Selects input elements that are read-only</td>
+                <td><input type="text" class="example" value="Read-only Text" readonly></td>
+            </tr>
+            <tr>
+                <td>:read-write</td>
+                <td>Selects input elements that are editable</td>
+                <td><input type="text" class="example" value="Editable Text"></td>
+            </tr>
+            <tr>
+                <td>:required</td>
+                <td>Selects input elements that are required</td>
+                <td><input type="text" class="example" required></td>
+            </tr>
+            <tr>
+                <td>:right</td>
+                <td>Selects elements that are aligned to the right within their container</td>
+                <td>
+                    <div class="example" style="text-align: left;">Left Aligned</div>
+                    <div class="example" style="text-align: right;">Right Aligned</div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>:target</td>
+                <td>Selects the target element (e.g., an anchor) of the current URL</td>
+                <td><a href="#example" id="examplel1" class="example">Target Element</a></td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>Selects visited links</td>
+                <td><a href="#" class="examplel">Visited Link</a></td>
+            </tr>
+           
+        </table>
+    </div>
+</body>
+
+</html>
