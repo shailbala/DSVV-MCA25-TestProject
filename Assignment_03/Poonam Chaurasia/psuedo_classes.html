@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo-classes Table</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #ddd;
+  }
+</style>
+</head>
+<body>
+
+<h2>Pseudo-classes Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pseudo-class</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:first-child</td>
+      <td>Selects the first child element of its parent.</td>
+    </tr>
+    <tr>
+      <td>:last-child</td>
+      <td>Selects the last child element of its parent.</td>
+    </tr>
+    <tr>
+      <td>:nth-child(n)</td>
+      <td>Selects every element that is the nth child, regardless of type, of its parent.</td>
+    </tr>
+    <tr>
+      <td>:nth-of-type(n)</td>
+      <td>Selects every element that is the nth child of its type, regardless of parent.</td>
+    </tr>
+    <tr>
+      <td>:hover</td>
+      <td>Selects an element when you mouse over it.</td>
+    </tr>
+    <tr>
+      <td>:focus</td>
+      <td>Selects an element when it is focused.</td>
+    </tr>
+    <tr>
+      <td>:active</td>
+      <td>Selects an element when it is being activated by the user.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
