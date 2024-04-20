@@ -1,0 +1,68 @@
+table {
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Apply pseudo-classes */
+  p:first-child{
+    color: red;
+    font-size: larger;
+  }
+  
+  td.lst-child:last-child{
+    background-color: pink;
+  
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  a:hover{
+    color: red;
+  }
+  
+  a:visited{
+    color: blueviolet;
+  }
+  
+  a:active{
+    background-color: yellow;
+  }
+  
+  /* Apply pseudo element*/
+  td.after::after{
+    content: "(Jo contect css me hoga vo line ke ending m join ho jarega)";
+    color: red;
+  }
+  
+  td.before::before{
+    content: "(Jo contect css me hoga vo line ke starting m join ho jarega)";
+    color: brown;
+  }
+  
+  td.first-letter::first-letter{
+    color: blue;
+    font-size: larger;
+  }
+  
+  td.first-line::first-line{
+    color: orangered;
+    font-size: larger;
+  }
+  
+  ::marker{
+    color: darkgreen;
+  }
