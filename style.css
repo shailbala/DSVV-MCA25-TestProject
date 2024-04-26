@@ -1,0 +1,59 @@
+body {
+    font-family: OCR A Std, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 175, 139);
+    
+}
+h1{
+    color: greenyellow;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+.input-box{
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: blue;
+   
+}
+label{
+    padding: 10px;
+    color: chartreuse;
+    font-display: bold;
+    font-size: 20px;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid red;
+    border-radius: 15px;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+  }
+button{
+ 
+    margin: 10px;
+    height: 40px;
+    width: 70px;
+    font-size: 24px;
+    font: 400;
+    background-color: coral;
+}
+#output{
+
+text-align: center;
+color: aquamarine;
+}

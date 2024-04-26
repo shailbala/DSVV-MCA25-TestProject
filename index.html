@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Numbers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <h1>Sort Numbers</h1>
+            <label for="num1">Enter number 1:</label>
+            <input type="text" id="num1" onkeydown="moveToNext(event, 'num2')">
+            <br>
+            <label for="num2">Enter number 2:</label>
+            <input type="text" id="num2" onkeydown="moveToNext(event, 'num3')">
+            <br>
+            <label for="num3">Enter number 3:</label>
+            <input type="text" id="num3" onkeydown="moveToNext(event, 'sortButton')">
+            <br>
+            <button id="sortButton" onclick="sortNumbers()">Sort</button>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
