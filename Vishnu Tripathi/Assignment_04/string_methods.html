@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td>length</td>
+        <td>Returns the length of a string</td>
+        <td>var str = "Hello World!";
+            <br>str.length; // Returns 12</td>
+    </tr>
+    <tr>
+        <td>charAt()</td>
+        <td>Returns the character at a specified index (position)</td>
+        <td>var str = "Hello";
+            <br>str.charAt(0); // Returns 'H'</td>
+    </tr>
+    <tr>
+        <td>charCodeAt()</td>
+        <td>Returns the Unicode of the character at a specified index</td>
+        <td>var str = "Hello";
+            <br>str.charCodeAt(0); // Returns 72</td>
+    </tr>
+    <tr>
+        <td>[ ]</td>
+        <td>Returns the character at a specified index (position)</td>
+        <td>var str = "Hello";
+            <br>str[0]; // Returns 'H'</td>
+    </tr>
+    <tr>
+        <td>slice()</td>
+        <td>Extracts a section of a string and returns it as a new string</td>
+        <td>var str = "Hello World!";
+            <br>str.slice(0, 5); // Returns "Hello"</td>
+    </tr>
+    <tr>
+        <td>substring()</td>
+        <td>Returns the characters between two specified indices of a string</td>
+        <td>var str = "Hello World!";
+            <br>str.substring(0, 5); // Returns "Hello"</td>
+    </tr>
+    <tr>
+        <td>substr()</td>
+        <td>Returns the characters in a string beginning at the specified location through the specified number of characters</td>
+        <td>var str = "Hello World!";
+            <br>str.substr(6, 5); // Returns "World"</td>
+    </tr>
+    <tr>
+        <td>toUpperCase()</td>
+        <td>Converts a string to uppercase letters</td>
+        <td>var str = "Hello";
+            <br>str.toUpperCase(); // Returns "HELLO"</td>
+    </tr>
+    <tr>
+        <td>toLowerCase()</td>
+        <td>Converts a string to lowercase letters</td>
+        <td>var str = "Hello";
+            <br>str.toLowerCase(); // Returns "hello"</td>
+    </tr>
+    <tr>
+        <td>concat()</td>
+        <td>Joins two or more strings</td>
+        <td>var str1 = "Hello";
+            <br>var str2 = "World!";
+            <br>str1.concat(" ", str2); // Returns "Hello World!"</td>
+    </tr>
+    <tr>
+        <td>trim()</td>
+        <td>Removes whitespace from both ends of a string</td>
+        <td>var str = "   Hello   ";
+            <br>str.trim(); // Returns "Hello"</td>
+    </tr>
+    <tr>
+        <td>trimStart()</td>
+        <td>Removes whitespace from the beginning of a string</td>
+        <td>var str = "   Hello";
+            <br>str.trimStart(); // Returns "Hello"</td>
+    </tr>
+    <tr>
+        <td>trimEnd()</td>
+        <td>Removes whitespace from the end of a string</td>
+        <td>var str = "Hello   ";
+            <br>str.trimEnd(); // Returns "Hello"</td>
+    </tr>
+    <tr>
+        <td>padStart()</td>
+        <td>Pads the current string with another string until the resulting string reaches the given length</td>
+        <td>var str = "Hello";
+            <br>str.padStart(10, "X"); // Returns "XXXXXHello"</td>
+    </tr>
+    <tr>
+        <td>padEnd()</td>
+        <td>Pads the current string with another string until the resulting string reaches the given length</td>
+        <td>var str = "Hello";
+            <br>str.padEnd(10, "X"); // Returns "HelloXXXXX"</td>
+    </tr>
+    <tr>
+        <td>repeat()</td>
+        <td>Returns a new string with a specified number of copies of the string it was called on</td>
+        <td>var str = "Hello";
+            <br>str.repeat(3); // Returns "HelloHelloHello"</td>
+    </tr>
+    <tr>
+        <td>replace()</td>
+        <td>Returns a new string with some or all matches of a pattern replaced by a replacement</td>
+        <td>var str = "Hello World!";
+            <br>str.replace("World", "Universe"); // Returns "Hello Universe!"</td>
+    </tr>
+    <tr>
+        <td>replaceAll()</td>
+        <td>Returns a new string with all matches of a pattern replaced by a replacement</td>
+        <td>var str = "Hello World!";
+            <br>str.replaceAll("o", "x"); // Returns "Hellx Wxrld!"</td>
+    </tr>
+    <tr>
+        <td>split()</td>
+        <td>Splits a string into an array of substrings</td>
+        <td>var str = "Hello World!";
+            <br>str.split(" "); // Returns ["Hello", "World!"]</td>
+    </tr>
+</table>
+
+</body>
+</html>
