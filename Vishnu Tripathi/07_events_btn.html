@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.5rem;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        /* background-color: white; */
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      button:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      #clickme {
+        background-color: blue;
+        color: white;
+      }
+
+      .new_content {
+        color: #ff5722;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="content">some content here</p>
+    </div>
+
+    <button id="delete">DELETE</button>
+    <button id="add">ADD</button>
+
+    <button
+      id="clickme"
+      onclick="changeColor()"
+      style="background-color: blue; color: white"
+    >
+      Click Me
+    </button>
+  </body>
+  <script>
+    const delete_btn = document.getElementById("delete");
+    delete_btn.addEventListener("click", function () {
+        
+      document.getElementById("content")?.remove();
+    });
+
+    const add_btn = document.getElementById("add");
+    add_btn.addEventListener("click", function () {
+      const p_tag = document.createElement("p");
+      p_tag.className = "new_content";
+      p_tag.textContent = "this is the New and Updated Content";
+
+      document.getElementsByClassName("container")[0].appendChild(p_tag);
+    });
+
+    function changeColor() {
+      document.getElementById("clickme").style.backgroundColor === "blue"
+        ? document
+            .getElementById("clickme")
+            .setAttribute("style", "background-color:red; color:yellow;")
+        : document
+            .getElementById("clickme")
+            .setAttribute("style", "background-color:blue; color:white;");
+    }
+  </script>
+</html>
