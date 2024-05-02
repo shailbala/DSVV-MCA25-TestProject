@@ -1,0 +1,75 @@
+table {
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Apply pseudo-classes */
+  p:first-child{
+    color: rgb(0, 14, 96);
+    font-size: larger;
+  }
+
+  td.lst-child:last-child{
+    background-color: rgb(219, 157, 168);
+
+  }
+
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  a:hover{
+    color: rgb(96, 9, 9);
+  }
+
+  a:visited{
+    color: rgb(135, 73, 192);
+  }
+
+  a:active{
+    background-color: rgb(9, 242, 180);
+  }
+
+  /* Apply pseudo element*/
+  td.after::after{
+    content: "(Jo contect css me hoga vo line ke ending m join ho jarega)";
+    color: rgb(211, 21, 198);
+  }
+  
+  td.before::before{
+    content: "(Jo contect css me hoga vo line ke starting m join ho jarega)";
+    color: rgb(2, 113, 147);
+  }
+
+  td.first-letter::first-letter{
+    color: rgb(243, 12, 12);
+    font-size: larger;
+  }
+
+  td.first-line::first-line{
+    color: rgb(3, 104, 35);
+    font-size: larger;
+  }
+  ::selection {
+    color: red;
+    background: rgb(101, 171, 233);
+  }
+ 
+
+  ::marker{
+    color: rgb(7, 71, 131);
+  }
+
+ /* String method */
