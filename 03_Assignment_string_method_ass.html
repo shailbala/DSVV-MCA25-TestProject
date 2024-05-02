@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String method</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+        }
+        .example {
+            background-color: #f9f9f9;
+            border: 3px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        code {
+            background-color: #e0e0e0;
+            padding: 5px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Javascript String Method </h1>
+
+        <h2> 1. String Length </h2>
+        <p>The length property returns the length of a string:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text = "My name is Jonathan from UK"<br>
+                let len = text.length;<br>
+                console.log(len);<br>
+                #Output: 27
+            </code>
+        </div>
+
+        <h2> 2. String charAt </h2>
+        <p>The <code>charAt()</code> method returns the character at a specified index (position) in a string:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text = "My name is Jonathan from UK"<br>
+                let char = text.char(1);<br>
+                console.log(char);<br>
+                #Output: y
+            </code>
+        </div>
+
+        <h2> 3. String charCodeAt </h2>
+        <p>The <code>charCodeAt()</code> method returns the code of the character at a specified index in a string:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text = "My name is Jonathan from UK"<br>
+                let code = text.charCodeAt(1);<br>
+                console.log(code);<br>
+                #Output: 121
+            </code>
+        </div>
+
+        <h2> 4. String Slice (slice(start, end))</h2>
+        <p><code>slice()</code> extracts a part of a string and returns the extracted part in a new string:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text = "My name is Jonathan from UK"<br>
+                let sclice = text.slice(1,6);<br>
+                console.log(slice);<br>
+                #Output: ?
+            </code>
+        </div>
+
+        <h2> 4. String substring (substring(start, end))</h2>
+        <p><code>substring()</code> is similar to <code>slice()</code>. The difference is that start and end values less than 0 are treated as 0 in substring():<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text = "My name is Jonathan from UK"<br>
+                let sub = text.subtring(1,10);<br>
+                console.log(sub);<br>
+                #Output: y name is
+            </code>
+        </div>
+
+        <h2> 5. String substr (substr(start, length))</h2>
+        <p><code>substr()</code> is similar to <code>slice()</code>.The difference is that the second parameter specifies the length of the extracted part:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let str = "Apple, Mango, Kiwi";<br>
+                let sub = str.substr(7,5);<br>
+                console.log(sub);<br>
+                #Output: Mango
+            </code>
+        </div>
+
+        <h2> 6. String toUppercase </h2>
+        <p>A string is converted to upper case with <code>toUpperCase()</code>:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text1 = "Hello World!";<br>
+                let upper = text1.touppercase();<br>
+                console.log(upper);<br>
+                #Output: HELLO WORLD!
+            </code>
+        </div>
+
+        <h2> 7. String toLowercase</h2>
+        <p>A string is converted to lower case with <code>toLowerCase()</code>:<br></p>
+        <div class="example">
+            <code>
+                #Example:<br>
+                let text1 = "HELLO WORLD!";<br>
+                let lower = text1.substr(7,6);<br>
+                console.log(lower);<br>
+                #Output: hello world!
+            </code>
+        </div>
+    </div>
+</body>
+</html>
