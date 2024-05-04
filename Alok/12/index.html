@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+           
+        <div class="properties">
+            <h1>Event Properties</h1>
+            <div class="property">
+                <span class="property-name">type:</span> A string indicating the type of event.
+            </div>
+            <div class="property">
+                <span class="property-name">target:</span> A reference to the object that dispatched the event.
+            </div>
+            <div class="property">
+                <span class="property-name">currentTarget:</span> A reference to the object that has the event handler
+                attached.
+            </div>
+            <div class="property">
+                <span class="property-name">timeStamp:</span> The time when the event was created.
+            </div>
+            <div class="property">
+                <span class="property-name">bubbles:</span> Indicates whether the event bubbles up through the DOM tree.
+            </div>
+            <div class="property">
+                <span class="property-name">cancelable:</span> Indicates whether the event can be canceled.
+            </div>
+            <div class="property">
+                <span class="property-name">eventPhase:</span> An integer representing the current phase of the event
+                flow.
+            </div>
+            <div class="property">
+                <span class="property-name">defaultPrevented:</span> Indicates whether the preventDefault() method was
+                called.
+            </div>
+            <div class="property">
+                <span class="property-name">isTrusted:</span> Indicates whether the event is trusted.
+            </div>
+            <div class="property">
+                <span class="property-name">composed:</span> Indicates whether the event may cross the shadow DOM
+                boundary.
+            </div> 
+        </div>
+        
+        
+        <button id="triggerButton" class="button-83" role="button">Trigger Event</button>
+        <p id="eventDetails"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

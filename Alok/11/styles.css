@@ -1,0 +1,17 @@
+#container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px auto;
+    padding: 20px;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 20px;
+}
